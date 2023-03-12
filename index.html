@@ -28,7 +28,7 @@
         <nav>
           <ul class="menu1">
             <li class="item">
-              <a class="another-none" href="./index.html">Agencja</a>
+              <a class="another-none --links-active" href="./index.html">Agencja</a>
             </li>
             <li class="item">
               <a class="another-none" href="./portfolio.html">Portfolio</a>
@@ -65,7 +65,7 @@
 
 
         <h1>EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
-        <button class="button-place" type="button">Zamów usługe</button>
+        <button class="button-place" data-modal-open>Zamów usługe</button>
 
 
       </div>
@@ -129,15 +129,18 @@
       <div class="container">
         <h2 class="h2">Czym się zajmujemy</h2>
         <ul class="portfolio card-index">
+          <div class="thumb">
           <li class="item">
             <img src="images/index-picture/img.jpg" alt="computer" width="350" height="300" />
-          </li>
+          </li><p class="label">APLIKACJE KOMPUTEROWE</p></div>
+          <div class="thumb">
           <li class="item">
             <img src="images/index-picture/img3.jpg" alt="mobile" width="350" height="300" />
-          </li>
+          </li><p class="label">APLIKACJE MOBILNE</p></div>
+          <div class="thumb">
           <li class="item">
             <img src="images/index-picture/img1.jpg" alt="tablet" width="350" height="300" />
-          </li>
+          </li><p class="label">ROZWIĄZANIA GRAFICZNE</p></div>
         </ul>
       </div>
     </section>
@@ -360,6 +363,13 @@
     </div>
 
   </footer>
+<div class="backdrop is-hidden">
+  <div class="modal is-hidden " data-modal>
+    <button class="btn-close" data-modal-close>X</button>
+  </div></div>
+
+  <script src="/goit-markup-hw-05/modal.js"></script>
 </body>
+
 
 </html>
