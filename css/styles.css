@@ -583,7 +583,7 @@ header-contact-link {
   height: 60px;
   fill: rgba(175, 177, 184, 1);
 }
-
+/*footer*/
 footer {
   background-color: #2f303a;
   padding: 60px 0;
@@ -605,22 +605,17 @@ footer {
 address a{
  font-style: normal;
  color: #fff;
- list-style-type: none;
 }
 .footer-adress a {
   color: #ffffff;
 }
-.footer-adress li :nth-child(1 + 2) {
-  padding-bottom: 9px 0;
-}
 
-/*! -- nie wiem jak tu zrobić hover i fokus */
-/*
-.adress li:hover,
-.adress li:focus  {
- fill: #2196f3;
+
+.footer-color a:hover,
+.footer-color a:focus  {
+ color: #2196f3;
   cursor: pointer;
-}*/
+}
 .item-svg-footer:hover {
   background-color: #2196f3;
   cursor: pointer;
@@ -665,39 +660,42 @@ address a{
 }
 
 address {
-  padding: 11px 0 0;
+  padding: 20px 0 9px;
 }
 
-.adress {
+.address {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
 }
-
+address li {
+  list-style-type: none;
+}
 .logo-color {
   color: #ffffff;
 }
-
+.footer-color li{
+  padding-bottom: 9px;
+  list-style-type: none;
+}
 .footer-color a {
   color: rgba(255, 255, 255, 0.6);
- 
 }
 
 .icons-footer {
   display: flex;
 }
 /*modal*/
-.button-cross {
-  width: 4px;
-  height: 3px;
-}
-.close-btn {
+
+.btn-close {
+  display: block;
   position: absolute;
-  top: 4px;
-  right: 133px;
-  width: 11px;
-  height: 11px;
+  top: 8px;
+  right: 8px;
+  max-height:30px;
+  width:45px;
+  align-items: insite;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -729,4 +727,8 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.overlay__function{
+  color :#fff;
+  height: 100%;
 }
