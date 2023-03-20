@@ -380,6 +380,10 @@ header-contact-link {
   margin: 0 auto;
   z-index: 0;
 }
+.imgoverlay-container{
+  position: relative;
+  overflow: hidden;
+}
 .card:hover .overlay__function {
   -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
@@ -395,9 +399,9 @@ header-contact-link {
   overflow: hidden;
 }
 .overlay__function {
+  top:0;
+  left:0;
   position: absolute;
-  width: 370px;
-  height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -447,14 +451,10 @@ header-contact-link {
   height: 100%;
 }
 
-.portfolio h3 {
-  margin: 24px 20px 4px 20px;
-}
 
-.portfolio p {
-  margin: 0 20px 24px 20px;
+.h3p{
+  margin: 24px 20px;
 }
-
 .card-index {
   justify-content: space-between;
   list-style-type: none;
@@ -588,9 +588,9 @@ footer {
   background-color: #2f303a;
   padding: 60px 0;
   height: 252px;
-
   width: 100%;
 }
+
 .footer-block {
   display: inline-block;
 }
@@ -604,9 +604,8 @@ footer {
 }
 address a{
  font-style: normal;
- list-style-type: none;
- text-decoration: none;
  color: #fff;
+ list-style-type: none;
 }
 .footer-adress a {
   color: #ffffff;
@@ -614,6 +613,7 @@ address a{
 .footer-adress li :nth-child(1 + 2) {
   padding-bottom: 9px 0;
 }
+
 /*! -- nie wiem jak tu zrobić hover i fokus */
 /*
 .adress li:hover,
@@ -681,6 +681,7 @@ address {
 
 .footer-color a {
   color: rgba(255, 255, 255, 0.6);
+ 
 }
 
 .icons-footer {
