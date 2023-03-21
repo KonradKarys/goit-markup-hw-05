@@ -97,18 +97,18 @@ a:focus {
   color: #2196f3;
 }
 
-button {
+.button {
   line-height: 139%;
   cursor: pointer;
   text-align: center;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
-  padding: 6px 0;
   line-height: 26px;
-  padding-left: 22px;
-  padding-right: 22px;
   border: none;
   border-radius: 4px;
+  height: 38px;
+  padding :6px 22px;
 }
 
 .button-place {
@@ -226,7 +226,6 @@ header-contact-link {
   display: flex;
   align-items: center;
   color: #757575;
-
 } /*
 .header-adress:focus,
 .header-adress:hover {
@@ -294,17 +293,12 @@ header-contact-link {
   width: 100%;
   margin-top: 45px;
   position: absolute;
-  transition: 0,5s;
+  transition: 0, 5s;
 }
-.item :hover::after {
+.item :active::after{
   width: 100%;
   left: 0;
   border-bottom: solid 4px #2196f3;
-}
-.menu1 a:active {
-  border-radius: 4px;
-  border-bottom: solid 4px #2196f3;
-  width: 100%;
 }
 .menu1 > .item:not(:last-child) {
   margin-right: 46px;
@@ -313,7 +307,7 @@ header-contact-link {
   display: flex;
   list-style: none;
   justify-content: center;
-  padding-bottom: 56px;
+  padding-bottom: 50px;
 }
 
 .img {
@@ -380,7 +374,7 @@ header-contact-link {
   margin: 0 auto;
   z-index: 0;
 }
-.imgoverlay-container{
+.imgoverlay-container {
   position: relative;
   overflow: hidden;
 }
@@ -399,8 +393,8 @@ header-contact-link {
   overflow: hidden;
 }
 .overlay__function {
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(200%);
@@ -451,8 +445,7 @@ header-contact-link {
   height: 100%;
 }
 
-
-.h3p{
+.h3p {
   margin: 24px 20px;
 }
 .card-index {
@@ -564,7 +557,7 @@ header-contact-link {
 .clients:hover .item-client,
 .clients:focus .item-client,
 .clients:hover,
-.clients:focus {
+.clients:focus{
   fill: rgba(33, 150, 243, 1);
   border-color: #2196f3;
   cursor: pointer;
@@ -602,18 +595,17 @@ footer {
 .blue-font {
   color: #2196f3;
 }
-address a{
- font-style: normal;
- color: #fff;
+address a {
+  font-style: normal;
+  color: #fff;
 }
 .footer-adress a {
   color: #ffffff;
 }
 
-
 .footer-color a:hover,
-.footer-color a:focus  {
- color: #2196f3;
+.footer-color a:focus {
+  color: #2196f3;
   cursor: pointer;
 }
 .item-svg-footer:hover {
@@ -675,7 +667,7 @@ address li {
 .logo-color {
   color: #ffffff;
 }
-.footer-color li{
+.footer-color li {
   padding-bottom: 9px;
   list-style-type: none;
 }
@@ -693,15 +685,16 @@ address li {
   position: absolute;
   top: 8px;
   right: 8px;
-  max-height:30px;
-  width:45px;
-  align-items: insite;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
-
+.btn-close:hover a{
+  color:#212121
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -728,7 +721,7 @@ address li {
   visibility: hidden;
   pointer-events: none;
 }
-.overlay__function{
-  color :#fff;
+.overlay__function {
+  color: #fff;
   height: 100%;
 }
