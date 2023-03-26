@@ -42,7 +42,7 @@ h4 {
 
 p {
   font-weight: 400;
-  size: 16px;
+  font-size: 16px;
   line-height: 30px;
   color: #757575;
 }
@@ -120,7 +120,7 @@ a:focus {
   height: 50px;
   background: #2196f3;
   margin: 0 auto;
-  padding: auto;
+  padding: 0 auto;
   margin-top: 30px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
@@ -160,9 +160,7 @@ a:focus {
 }
 
 .container {
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   line-height: 100%;
@@ -362,9 +360,6 @@ header-contact-link {
 }
 .card {
   flex-basis: calc((100% - 2 * 30px) / 3);
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 .card-set img {
   display: block;
@@ -455,14 +450,17 @@ header-contact-link {
 }
 
 .h3p {
-  margin: 24px 20px;
+  padding: 24px 20px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .card-index {
   justify-content: space-between;
   list-style-type: none;
   display: flex;
   height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.12);
 }
 
 .card-index > .thumb:not(:last-child) {
@@ -491,10 +489,8 @@ header-contact-link {
 }
 .label {
   justify-content: center;
-  font-style: bold;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 3%;
   line-height: 16.41px;
   color: rgba(255, 255, 255, 1);
 }
@@ -549,7 +545,7 @@ header-contact-link {
 
 .us-clients {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .clients {
   display: flex;
@@ -721,7 +717,7 @@ address li {
   width: 528px;
   min-height: 581px;
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.14);
+  box-shadow:rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.12);
   z-index: 2;
   border-radius: 4px;
 }
